@@ -77,8 +77,8 @@ stravaBot stravaClient config (Just command) = do
                   Just activity -> text $ formatActivity activity
                   Nothing -> text "No activities you lazy bum!"
   void $ say (formatMessage message) config
-  return $ text "Handled a command!\n"
-stravaBot _ _ Nothing = return $ text "Failed to parse incoming command...\n"
+  return $ text "Handled your command!\n"
+stravaBot _ _ Nothing = return $ text "Failed to parse your command...\n"
 
 readCredentials :: String -> IO String
 readCredentials path = filter (/= '\n') <$> readFile path

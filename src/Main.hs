@@ -48,7 +48,7 @@ stravaBot config (Just command) = do
   logLine ("Received a command: " ++ show command)
   void $ say (formatMessage $ _commandName command) config
   return $ text "Handled a command!\n"
-stravaBot config Nothing = return $ text "Failed to parse an incoming command...\n"
+stravaBot _ Nothing = return $ text "Failed to parse incoming command...\n"
 
 main :: IO ()
 main = do

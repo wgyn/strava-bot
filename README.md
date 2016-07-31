@@ -1,4 +1,4 @@
-strava-bot doesn't do much of anything at the moment.
+strava-bot is a Slack bot that tells you about your Strava activities.
 
 ### Setup
 

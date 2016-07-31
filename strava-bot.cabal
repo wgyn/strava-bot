@@ -16,7 +16,8 @@ cabal-version:       >=1.10
 executable strava-bot
   main-is:             Main.hs
   build-depends:       base >=4.7 && <4.9,
+                       linklater >=3.2 && <3.3,
                        text >= 1.2.1.1 && <1.3,
-                       linklater >=3.2 && <3.3
+                       warp >= 3.2.7 && <3.3
   hs-source-dirs:      src
   default-language:    Haskell2010
